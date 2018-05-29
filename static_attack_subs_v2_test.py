@@ -40,7 +40,7 @@ def greedy_hueristics(filepath, comp_filename, load_file_name, start_range, cont
 # -----------------------------------------------------------------------------------------------------------------------------------
 # Initializing the method variables
 # -----------------------------------------------------------------------------------------------------------------------------------
-    tot_exe_time_start = time.time()
+    tot_exe_time_start = time.time() # Starting the timer
     temp_max_loadloss = 0;
     worst_case_outage = [];
     worst_case_sub = [];
@@ -80,7 +80,7 @@ def greedy_hueristics(filepath, comp_filename, load_file_name, start_range, cont
             break;
         else:
             loadloss_gain = temp_max_loadloss; 
-    tot_exe_time_end = time.time()
+    tot_exe_time_end = time.time() # Stopping the timer
     tot_exe_time = (tot_exe_time_end - tot_exe_time_start) # Computes the actual run time of the algorithm
 # -----------------------------------------------------------------------------------------------------------------------------------
 # Prints the outputs on the console
