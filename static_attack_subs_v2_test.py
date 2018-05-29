@@ -4,8 +4,8 @@ Created on Fri Jun 16 11:10:02 2017
 
 @author: saqibhasan
 
-This code is used to identify the transmission lines and its associated protection assembly that cause the worst case load loss. 
-It includes the substation configuration. 
+This function serves as the main method for the static attack scenario. It is used to identify the transmission lines and its associated 
+protection assembly that cause the worst case load loss. It includes the substation configuration. 
 
 """
 # -----------------------------------------------------------------------------------------------------------------------------------
