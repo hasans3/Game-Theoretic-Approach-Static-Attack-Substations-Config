@@ -68,9 +68,9 @@ def greedy_hueristics(filepath, comp_filename, load_file_name, start_range, cont
 # Updating the solution																													
 # -----------------------------------------------------------------------------------------------------------------------------------																									 # as per the budget constraints. The method returns the maximum load loss max_loadloss and corresponding transmission line max_load_loss_outage. 
             if (max_loadloss > temp_max_loadloss): # Checks if the current system damage is more than any previous damage
-                temp_max_loadloss = max_loadloss;  
-                worst_case_outage = max_load_loss_outage; 
-                worst_case_sub = subs_config_dict_keys[i];
+                temp_max_loadloss = max_loadloss;  # Updates load loss/damage
+                worst_case_outage = max_load_loss_outage; # Updates transmission line
+                worst_case_sub = subs_config_dict_keys[i]; # Updates Substations
                 if sub_budget == 0:
                     worst_case_sub = tuple([worst_case_sub]);
                 else:
@@ -79,7 +79,7 @@ def greedy_hueristics(filepath, comp_filename, load_file_name, start_range, cont
         if ((loadloss_gain - temp_max_loadloss) == 0): # Checks if there is a change in the solution for consecutive iterations. If not, the algorithm is terminated
             break;
         else:
-            loadloss_gain = temp_max_loadloss; 
+            loadloss_gain = temp_max_loadloss; # Updates the change in damage
     tot_exe_time_end = time.time() # Stopping the timer
     tot_exe_time = (tot_exe_time_end - tot_exe_time_start) # Computes the actual run time of the algorithm
 # -----------------------------------------------------------------------------------------------------------------------------------
