@@ -24,11 +24,11 @@ To run the attack method, the following steps are needed:
 4. Open the "static_attack_subs_v2_test.py" method and set the paths for the filepath, comp_filename, load_file_name as per the 
 directory where the downloaded files are stored from the "System Models" folder. 
 
-filepath is the .dss file.
+filepath is the path where .dss file is stored on the local drive.
 
-comp_filename is the component_data_subs.txt file
+comp_filename is the local drive path where component_data_subs.txt file is stored.
 
-load_file_name is the load_data.txt file. For certain models this can be load_data1.txt or load_data_testing1.txt, etc.
+load_file_name is the path for the load_data.txt file stored on the local drive. For certain models the file name can be load_data1.txt or load_data_testing1.txt, etc.
 
 5. The method "static_attack_subs_v2_test.py" can be now used for identifying the most damaging attacks by setting the appropriate 
 attack budgets represented by p_budget and s_budget.
