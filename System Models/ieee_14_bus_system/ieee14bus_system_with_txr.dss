@@ -1,0 +1,49 @@
+clear
+New object=circuit.samplename
+//Define Sources
+New vsource.Source3 bus1=Bus3 phases=3 basekv=138 MVA=60 r1=.0000001 x1=.0000001
+New vsource.Source4 bus1=Bus8 phases=3 basekv=138 MVA=25 r1=.0000001 x1=.0000001
+New vsource.Source5 bus1=Bus6 phases=3 basekv=138 MVA=25 r1=.0000001 x1=.0000001
+New vsource.Source1 bus1=Bus1 phases=3 basekv=138 MVA=615 r1=.0000001 x1=0.0000001
+New vsource.Source2 bus1=Bus2 phases=3 basekv=138 MVA=60 r1=.0000001 x1=.0000001
+//Define the lines
+New Line.TL12 bus1=Bus1 bus2=Bus2 R1=0.369 R0=0.922 X1=1.126 X0=2.817 C1=.0000000736 C0=.000000184 length=10 units=mi
+New Line.TL1011 bus1=Bus11 bus2=Bus10 R1=1.562 R0=3.906 X1=3.657 X0=9.144 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL1213 bus1=Bus12 bus2=Bus13 R1=4.207 R0=10.518 X1=3.806 X0=9.516 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL25 bus1=Bus2 bus2=Bus5 R1=1.084 R0=2.711 X1=3.311 X0=8.278 C1=.0000000482 C0=.000000121 length=10 units=mi
+New Line.TL34 bus1=Bus4 bus2=Bus3 R1=1.276 R0=3.19 X1=3.257 X0=8.142 C1=.0000000178 C0=.0000000446 length=10 units=mi
+New Line.TL24 bus1=Bus2 bus2=Bus4 R1=1.106 R0=2.766 X1=3.357 X0=8.394 C1=.0000000474 C0=.000000118 length=10 units=mi
+New transformer.sub2 phases= 3 buses= (Bus4 Bus7) conns= 'delta delta kvs= "138 138" XHL= .05
+New Line.TL15 bus1=Bus1 bus2=Bus5 R1=1.028 R0=2.572 X1=4.247 X0=10.618 C1=.0000000686 C0=.000000171 length=10 units=mi
+New Line.TL914 bus1=Bus9 bus2=Bus14 R1=2.42 R0=6.051 X1=5.149 X0=12.872 C1=.000000001 C0=.000000001 length=10 units=mi
+New transformer.sub1 phases= 3 buses= (Bus4 Bus9) conns= 'delta delta' kvs= "138 138" XHL= .05
+New Line.TL612 bus1=Bus12 bus2=Bus6 R1=2.34 R0=5.851 X1=4.871 X0=12.179 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL23 bus1=Bus2 bus2=Bus3 R1=0.894 R0=2.237 X1=3.77 X0=9.425 C1=.000000061 C0=.000000153 length=1 units=mi
+New Line.TL1314 bus1=Bus13 bus2=Bus14 R1=3.255 R0=8.137 X1=6.627 X0=16.569 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL910 bus1=Bus10 bus2=Bus9 R1=0.605 R0=1.514 X1=1.609 X0=4.023 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL611 bus1=Bus11 bus2=Bus6 R1=1.808 R0=4.521 X1=3.787 X0=9.469 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL79 bus1=Bus9 bus2=Bus7 R1=0.00000001 R0=0.00000001 X1=2.095 X0=5.237 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL78 bus1=Bus7 bus2=Bus8 R1=.00000001 R0=.00000001 X1=3.354 X0=8.386 C1=.000000001 C0=.000000001 length=10 units=mi
+New Line.TL45 bus1=Bus5 bus2=Bus4 R1=0.254 R0=0.635 X1=0.801 X0=2.004 C1=.000000001 C0=.000000001 length=10 units=mi
+New transformer.sub3 phases= 3 buses= (Bus5 Bus6) conns= 'delta delta' kvs= "138 138" XHL= .05
+New Line.TL613 bus1=Bus13 bus2=Bus6 R1=1.259 R0=3.149 X1=2.48 X0=6.202 C1=1e-9 C0=1e-9 length=10 units=mi
+//Define the loads
+New Load.Load2 bus1=Bus5 phases=3 Kw=7600  kvar= 1600 Kv=138 conn= delta model=1
+New Load.Load5 bus1=Bus13 phases=3 Kw=13800  kvar= 5800 Kv=138 conn= delta model=1
+New Load.Load8 bus1=Bus10 phases=3 Kw=9000  kvar= 5800 Kv=138 conn= delta model=1
+New Load.Load9 bus1=Bus9 phases=3 Kw=29500  kvar= 16600 Kv=138 conn= delta model=1
+New Load.Load3 bus1=Bus6 phases=3 Kw=11200  kvar= 7500 Kv=138 conn= delta model=1
+New Load.Load11 bus1=Bus3 phases=3 Kw=94200  kvar= 19100 Kv=138 conn= delta model=1
+New Load.Load4 bus1=Bus12 phases=3 Kw=6100  kvar= 1600 Kv=138 conn= delta model=1
+New Load.Load6 bus1=Bus11 phases=3 Kw=3500  kvar= 1800 Kv=138 conn= delta model=1
+New Load.Load1 bus1=Bus2 phases=3 Kw=21700  kvar= 12700 Kv=138 conn= delta model=1
+New Load.Load10 bus1=Bus4 phases=3 Kw=47800  kvar= -3900 Kv=138 conn= delta model=1
+New Load.Load7 bus1=Bus14 phases=3 Kw=14900  kvar= 5000 Kv=138 conn= delta model=1
+//Define the faults
+//Define the voltagebases
+set voltagebases=[138]
+calcv
+set freq=60
+set mode=snapshot
+solve
+//used for steady state analysis of power systems

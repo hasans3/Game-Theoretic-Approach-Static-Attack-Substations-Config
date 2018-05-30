@@ -1,0 +1,89 @@
+clear
+New object=circuit.samplename
+//Define Sources
+New vsource.V10 bus1=Bus30 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V1 bus1=Bus39 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V2 bus1=Bus31 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V8 bus1=Bus37 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V3 bus1=Bus32 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V9 bus1=Bus38 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V5 bus1=Bus34 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V4 bus1=Bus33 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V6 bus1=Bus35 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+New vsource.V7 bus1=Bus36 phases=3 basekv=1 Mvasc3=100 r1=1e-7 x1=1e-7
+//Define the lines
+New Line.tl87 bus1=Bus7 bus2=Bus8 R1=.000004 R0=0.00001 X1=0.000046 X0=0.000115 C1=.02e9 C0=.051e9 length=1 units=km
+New Line.tl139 bus1=Bus1 bus2=Bus39 R1=0.00001 R0=0.000025 X1=0.00025 X0=.000625 C1=.19e9 C0=.49e9 length=1 units=km
+New Line.tl12 bus1=Bus1 bus2=Bus2 R1=0.000035 R0=0.0000875 X1=0.000411 X0=.001028 C1=.18e9 C0=.46e9 length=1 units=km
+New Line.tl939 bus1=Bus39 bus2=Bus9 R1=0.00001 R0=0.000025 X1=0.00025 X0=.000625 C1=.31e9 C0=.79e9 length=1 units=km
+New Line.tl89 bus1=Bus8 bus2=Bus9 R1=0.000023 R0=0.0000575 X1=0.000363 X0=.0009 C1=.10e9 C0=.25e9 length=1 units=km
+New Line.tl58 bus1=Bus8 bus2=Bus5 R1=0.000008 R0=0.00002 X1=0.000112 X0=0.00028 C1=.03e9 C0=.09e9 length=1 units=km
+New Line.tl67 bus1=Bus7 bus2=Bus6 R1=0.000006 R0=0.000015 X1=0.000092 X0=0.00023 C1=.02e9 C0=.07e9 length=1 units=km
+New Line.tl65 bus1=Bus6 bus2=Bus5 R1=0.000002 R0=0.000005 X1=0.000026 X0=0.000065 C1=.01e9 C0=.02e9 length=1 units=km
+New Line.tl54 bus1=Bus4 bus2=Bus5 R1=0.000008 R0=0.00002 X1=0.000128 X0=0.00032 C1=.03e9 C0=.08e9 length=1 units=km
+New Line.tl34 bus1=Bus4 bus2=Bus3 R1=0.000013 R0=0.0000325 X1=0.000213 X0=.000533 C1=.05e9 C0=.14e9 length=1 units=km
+New Line.tl23 bus1=Bus3 bus2=Bus2 R1=0.000013 R0=0.0000325 X1=0.000151 X0=0.000378 C1=.06e9 C0=.17e9 length=1 units=km
+New Line.tl225 bus1=Bus25 bus2=Bus2 R1=0.00007 R0=0.000175 X1=0.000086 X0=0.000215 C1=.03e9 C0=.09e9 length=1 units=km
+New Line.tl2526 bus1=Bus25 bus2=Bus26 R1=0.000032 R0=0.00008 X1=0.000323 X0=.000808 C1=.13e9 C0=.34e9 length=1 units=km
+New Line.tl318 bus1=Bus3 bus2=Bus18 R1=0.000011 R0=0.0000275 X1=0.000133 X0=0.000333 C1=.05e9 C0=.14e9 length=1 units=km
+New Line.tl1817 bus1=Bus18 bus2=Bus17 R1=0.000007 R0=0.0000175 X1=0.000082 X0=0.000205 C1=.03e9 C0=.08e9 length=1 units=km
+New Line.tl1727 bus1=Bus27 bus2=Bus17 R1=0.000013 R0=0.0000325 X1=0.000173 X0=0.000433 C1=.08e9 C0=.21e9 length=1 units=km
+New Line.tl2726 bus1=Bus27 bus2=Bus26 R1=0.000014 R0=0.000035 X1=0.000147 X0=0.000368 C1=.06e9 C0=.15e9 length=1 units=km
+New Line.tl1617 bus1=Bus16 bus2=Bus17 R1=0.000007 R0=0.0000175 X1=0.000089 X0=0.000223 C1=.03e9 C0=.08e9 length=1 units=km
+New Line.tl1516 bus1=Bus15 bus2=Bus16 R1=0.000009 R0=0.0000225 X1=0.000094 X0=0.000235 C1=.04e9 C0=.11e9 length=1 units=km
+New Line.tl1415 bus1=Bus14 bus2=Bus15 R1=0.000018 R0=0.000045 X1=0.000217 X0=.000543 C1=.09e9 C0=.24e9 length=1 units=km
+New Line.tl414 bus1=Bus4 bus2=Bus14 R1=0.000008 R0=0.00002 X1=0.000129 X0=0.000323 C1=.03e9 C0=.09e9 length=1 units=km
+New Line.tl1413 bus1=Bus14 bus2=Bus13 R1=0.000009 R0=0.0000225 X1=0.000101 X0=0.000253 C1=.04e9 C0=.11e9 length=1 units=km
+New Line.tl1013 bus1=Bus13 bus2=Bus10 R1=0.000004 R0=0.00001 X1=0.000043 X0=0.000108 C1=.01e9 C0=.04e9 length=1 units=km
+New Line.tl1011 bus1=Bus11 bus2=Bus10 R1=0.000004 R0=0.00001 X1=0.000043 X0=0.000108 C1=.01e9 C0=.04e9 length=1 units=km
+New Line.tl611 bus1=Bus11 bus2=Bus6 R1=0.000007 R0=0.0000175 X1=0.000082 X0=0.000205 C1=.03e9 C0=.09e9 length=1 units=km
+New Line.tl2628 bus1=Bus26 bus2=Bus28 R1=0.000043 R0=0.000107 X1=0.000474 X0=.001185 C1=.20e9 C0=.51e9 length=1 units=km
+New Line.tl2829 bus1=Bus28 bus2=Bus29 R1=0.000014 R0=0.000035 X1=0.000151 X0=0.000378 C1=.06e9 C0=.16e9 length=1 units=km
+New Line.tl2629 bus1=Bus26 bus2=Bus29 R1=0.000057 R0=0.00014 X1=.000625 X0=.001563 C1=.27e9 C0=.68e9 length=1 units=km
+New Line.tl1624 bus1=Bus16 bus2=Bus24 R1=0.000003 R0=0.0000075 X1=0.000059 X0=0.000148 C1=.01e9 C0=.04e9 length=1 units=km
+New Line.tl1621 bus1=Bus16 bus2=Bus21 R1=0.000008 R0=0.00002 X1=0.000135 X0=0.000338 C1=.06e9 C0=.16e9 length=1 units=km
+New Line.tl2122 bus1=Bus21 bus2=Bus22 R1=0.000008 R0=0.00002 X1=0.00014 X0=0.00035 C1=.06e9 C0=.17e9 length=1 units=km
+New Line.tl1619 bus1=Bus16 bus2=Bus19 R1=0.000016 R0=0.00004 X1=0.000195 X0=0.000488 C1=.08e9 C0=.20e9 length=1 units=km
+New Line.tl2223 bus1=Bus22 bus2=Bus23 R1=0.000006 R0=0.000015 X1=0.000096 X0=0.00024 C1=.04e9 C0=.12e9 length=1 units=km
+New Line.tl2423 bus1=Bus24 bus2=Bus23 R1=0.000022 R0=0.000055 X1=0.00035 X0=0.000875 C1=.09e9 C0=.23e9 length=1 units=km
+//Define the transformers
+New Transformer.t9 phases=3 buses=(Bus30 Bus2) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.81
+New Transformer.t3 phases=3 buses=(Bus31 Bus6) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=2.5
+New Transformer.t8 phases=3 buses=(Bus37 Bus25) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=2.32
+New Transformer.t4 phases=3 buses=(Bus32 Bus10) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=2
+New Transformer.t1 phases=3 buses=(Bus12 Bus11) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=4.35
+New Transformer.t2 phases=3 buses=(Bus13 Bus12) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=4.35
+New Transformer.t10 phases=3 buses=(Bus38 Bus29) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.56
+New Transformer.t11 phases=3 buses=(Bus20 Bus19) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.38
+New Transformer.t5 phases=3 buses=(Bus34 Bus20) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.8
+New Transformer.t12 phases=3 buses=(Bus33 Bus19) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.42
+New Transformer.t6 phases=3 buses=(Bus35 Bus22) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=1.43
+New Transformer.t7 phases=3 buses=(Bus36 Bus23) Kvas=[100000 100000] conns='wye wye' kvs="1 1" XHL=2.72
+//Define the loads
+New Load.Load31 bus1=Bus31 phases=3 Kw=9200 kva=4600 Kv=1 conn=delta model=1
+New Load.Load3 bus1=Bus3 phases=3 Kw=322000 kva=2400 Kv=1 conn=delta model=1
+New Load.Load21 bus1=Bus21 phases=3 Kw=274000 kva=115000 Kv=1 conn=delta model=1
+New Load.Load39 bus1=Bus39 phases=3 Kw=1104000 kva=250000 Kv=1 conn=delta model=1
+New Load.Load8 bus1=Bus8 phases=3 Kw=522000 kva=176000 Kv=1 conn=delta model=1
+New Load.Load7 bus1=Bus7 phases=3 Kw=233800 kva=84000 Kv=1 conn=delta model=1
+New Load.Load4 bus1=Bus4 phases=3 Kw=500000 kva=184000 Kv=1 conn=delta model=1
+New Load.Load25 bus1=Bus25 phases=3 Kw=224000 kva=47200 Kv=1 conn=delta model=1
+New Load.Load26 bus1=Bus26 phases=3 Kw=139000 kva=17000 Kv=1 conn=delta model=1
+New Load.Load18 bus1=Bus18 phases=3 Kw=158000 kva=30000 Kv=1 conn=delta model=1
+New Load.Load27 bus1=Bus27 phases=3 Kw=281000 kva=75500 Kv=1 conn=delta model=1
+New Load.Load15 bus1=Bus15 phases=3 Kw=320000 kva=153000 Kv=1 conn=delta model=1
+New Load.Load12 bus1=Bus12 phases=3 Kw=7500 kva=88000 Kv=1 conn=delta model=1
+New Load.Load29 bus1=Bus29 phases=3 Kw=283500 kva=26900 Kv=1 conn=delta model=1
+New Load.Load28 bus1=Bus28 phases=3 Kw=206000 kva=27600 Kv=1 conn=delta model=1
+New Load.Load16 bus1=Bus16 phases=3 Kw=329000 kva=32300 Kv=1 conn=delta model=1
+New Load.Load24 bus1=Bus24 phases=3 Kw=308600 kva=-92000 Kv=1 conn=delta model=1
+New Load.Load20 bus1=Bus20 phases=3 Kw=628000 kva=103000 Kv=1 conn=delta model=1
+New Load.Load23 bus1=Bus23 phases=3 Kw=247500 kva=84600 Kv=1 conn=delta model=1
+//Define the faults
+//Define the voltagebases
+set voltagebases=[1]
+calcv
+set freq=60
+set mode=snapshot
+solve
+//used for steady state analysis of power systems
