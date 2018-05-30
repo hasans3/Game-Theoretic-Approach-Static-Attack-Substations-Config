@@ -15,7 +15,7 @@ method to obtain a efficient and resonable solution.
 Note: For more details about the problem, system model, etc., please refer to the paper titled "Vulnerability Analysis of Power Systems Based on Cyber-Attack and Defense Models". 
 The document will be available on Vanderbilt Universities, Institute for software integrated systems under "Publications".
 
-How to run the main method?
+How to run the main method "static_attack_subs_v2_test.py"?
   
 To run the attack method, the following steps are needed:
 1. Install the OpenDSS on the Windows machine as OpenDSS is not mac compatible.
@@ -25,3 +25,15 @@ To run the attack method, the following steps are needed:
 directory where the downloaded files are stored from the "System Models" folder. 
 5. The method "static_attack_subs_v2_test.py" can be now used for identifying the most damaging attacks by setting the appropriate 
 attack budgets represented by p_budget and s_budget.
+
+Supporting Methods for main method "static_attack_subs_v2_test.py" are the following:
+1. cascade_algorithm_reduced_outages.py
+2. cascade_algorithm.py
+3. load_maptest14bus1.py
+4. maptest_new_outage_list.py
+5. maptest_testing_subs.py
+6. maptest_testing.py
+7. static_attack_subs_support.py
+8. trimmed_list.py
+
+All these methods needs to be saved with in the local drive before the main method "static_attack_subs_v2_test.py" is executed.
