@@ -34,13 +34,13 @@ directory where the downloaded files are stored from the "System Models" folder.
 5. Run `static_attack_subs_v2_test.py`.
 
 ## Supporting Methods 
-1. cascade_algorithm_reduced_outages.py
+`1. cascade_algorithm_reduced_outages.py
 2. cascade_algorithm.py
 3. load_maptest14bus1.py
 4. maptest_new_outage_list.py
 5. maptest_testing_subs.py
 6. maptest_testing.py
 7. static_attack_subs_support.py
-8. trimmed_list.py
+8. trimmed_list.py`
 
 
