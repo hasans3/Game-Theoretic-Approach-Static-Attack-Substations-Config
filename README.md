@@ -23,6 +23,7 @@ To run the attack method, the following steps are needed:
 3. Install Spyder, PyCharm or any other Python IDE.
 4. Open the "static_attack_subs_v2_test.py" method and set the paths for the filepath, comp_filename, load_file_name as per the 
 directory where the downloaded files are stored from the "System Models" folder. 
+
 filepath is the .dss file.
 comp_filename is the component_data_subs.txt file
 load_file_name is the load_data.txt file. For certain models this can be load_data1.txt or load_data_testing1.txt, etc.
