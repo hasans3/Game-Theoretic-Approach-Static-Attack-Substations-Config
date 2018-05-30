@@ -16,7 +16,7 @@ method to obtain a efficient and resonable solution.
 Note: For more details about the problem, system model, etc., please refer to the paper titled "Vulnerability Analysis of Power Systems Based on Cyber-Attack and Defense Models". 
 The document will be available on Vanderbilt Universities, Institute for software integrated systems under "Publications".
 
-## How to run the main method "static_attack_subs_v2_test.py"?
+## How to run the main method `static_attack_subs_v2_test.py`?
   
 To run the attack method, the following steps are needed:
 1. `Install the OpenDSS` on the Windows machine as OpenDSS is not mac compatible.
