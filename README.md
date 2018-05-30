@@ -19,22 +19,21 @@ The document will be available on Vanderbilt Universities, Institute for softwar
 ## How to run the main method "static_attack_subs_v2_test.py"?
   
 To run the attack method, the following steps are needed:
-1. 'Install the OpenDSS' on the Windows machine as OpenDSS is not mac compatible.
-2. Download and save the system models from the "System Models" folder to the local drive. 
-3. 'Install' Spyder, PyCharm or any other Python IDE.
-4. Open the "static_attack_subs_v2_test.py" method and set the paths for the 'filepath, comp_filename, load_file_name' as per the 
+1. `Install the OpenDSS` on the Windows machine as OpenDSS is not mac compatible.
+2. `Download and save` the system models from the "System Models" folder to the local drive. 
+3. `Install` Spyder, PyCharm or any other Python IDE.
+4. `Open` the `static_attack_subs_v2_test.py` method and set the paths for the `filepath, comp_filename, load_file_name` as per the 
 directory where the downloaded files are stored from the "System Models" folder. 
 
-'filepath' is the path where .dss file is stored on the local drive.
+`filepath` is the path where `.dss` file is stored on the local drive.
 
-'comp_filename' is the local drive path where component_data_subs.txt file is stored.
+`comp_filename` is the local drive path where `component_data_subs.txt` file is stored.
 
-'load_file_name' is the path for the load_data.txt file stored on the local drive. For certain models the file name can be load_data1.txt or load_data_testing1.txt, etc.
+`load_file_name` is the path for the `load_data.txt` file stored on the local drive. For certain models the file name can be `load_data1.txt` or `load_data_testing1.txt`, etc.
 
-5. The method "static_attack_subs_v2_test.py" can be now used for identifying the most damaging attacks by setting the appropriate 
-attack budgets represented by 'p_budget' and 's_budget'.
+5. Run `static_attack_subs_v2_test.py`.
 
-Supporting Methods for main method "static_attack_subs_v2_test.py" are the following:
+## Supporting Methods 
 1. cascade_algorithm_reduced_outages.py
 2. cascade_algorithm.py
 3. load_maptest14bus1.py
@@ -44,4 +43,4 @@ Supporting Methods for main method "static_attack_subs_v2_test.py" are the follo
 7. static_attack_subs_support.py
 8. trimmed_list.py
 
-All these methods needs to be saved with in the local drive before the main method "static_attack_subs_v2_test.py" is executed.
+
