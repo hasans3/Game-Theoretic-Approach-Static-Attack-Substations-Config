@@ -46,8 +46,11 @@ directory where the downloaded files are stored from the "System Models" folder.
 
 ## Dependencies
 more-itertools 
+
 pywin32
+
 pypiwin32
+
 numpy
 
 To install dependencies: `pip install <dependencyname>`; ex: `pip install numpy`.
